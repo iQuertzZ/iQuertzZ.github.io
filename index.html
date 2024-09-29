@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDY Louis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+    <h1 class="logo">EDY Louis</h1>
+  </header>
+
+  <nav class="off-canvas" id="off-canvas">
+    <div class="close-btn" id="close-btn">&times;</div>
+    <ul>
+      <li><a href="#home">Acceuil</a></li>
+      <li><a href="#about">Qui suis-je</a></li>
+      <li><a href="#parcours">Mon parcours</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="hero-text">
+            <h1>Bienvenue</h1>
+            <p>Je m'appelle EDY Louis et voici mon portfolio</p>
+    </div>
+  </section>
+
+  <section id="about" class="content-section">
+    <h2>Qui suis-je ?</h2>
+    <p>Je m'appelle Louis EDY je suis étudiant à Epitech Lille.</p>
+  </section>
+
+  <section id="parcours" class="parcours-section">
+    <h2>Mon Parcours</h2>
+    
+    <div class="timeline">
+      
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <h3>2020 - 2021</h3>
+        </div>
+        <div class="timeline-content">
+          <h4>Lycée</h4>
+          <p>J'ai suivi une filière STI2D au Lycée du Vimeu (80), où j'ai obtenu mon baccalauréat. Durant cette période, j'ai développé une passion pour l'informatique et ces tiers.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <h3>2022 - 2024</h3>
+        </div>
+        <div class="timeline-content">
+          <h4>BTS Informatique</h4>
+          <p>J'ai ensuite poursuivi avec un BTS en Services Informatiques aux Organisations (SIO) où j'ai appris les bases du développement web, la programmation, ainsi que la gestion de projets informatiques.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <h3>2024 - Présent</h3>
+        </div>
+        <div class="timeline-content">
+          <h4>Epitech Lille</h4>
+          <p>Après mon BTS, j'ai acquis de l'expérience dans le domaine du développement en travaillant sur divers projets et en poursuivant mes études en informatique.</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <h2>Mes Compétences</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python logo">
+        <div class="skill-info">
+          <p>Python</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML/CSS logo">
+        <div class="skill-info">
+          <p>HTML / CSS</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%;"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java logo">
+        <div class="skill-info">
+          <p>Java</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="SQL logo">
+        <div class="skill-info">
+          <p>SQL</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <form id="contactForm" action="send.php" method="post">
+      <div class="form-group">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Sujet:</label>
+        <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Envoyer message</button>
+      <p id="statusMessage" class="status"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Portfolio - EDY Louis</h2>
+        </div>
+        
+
+        <div class="footer-social">
+          
+          <a href="#" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" width="30">
+          </a>
+          <a href="www.linkedin.com/in/louisedy" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Téléphone : 07 69 50 10 67</p>
+        <p>Adresse : 8 Rue de la Louvière , Lille</p>
+        <p>&copy; 2024 Edy Louis. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

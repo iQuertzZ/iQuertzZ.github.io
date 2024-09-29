@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.off-canvas {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: left 0.3s ease;
+}
+
+.off-canvas ul {
+  list-style: none;
+  padding: 50px 20px;
+}
+
+.off-canvas ul li {
+  margin-bottom: 20px;
+}
+
+.off-canvas ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg,#e52e71,#ff8a00);
+  color: white;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content-section {
+  padding: 50px;
+  text-align: center;
+}
+
+
+
+/* parcours*/
+.parcours-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.parcours-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #ddd;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-date {
+  width: 40%;
+  text-align: right;
+}
+
+.timeline-content {
+  width: 60%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: right;
+}
+
+.timeline-item:nth-child(odd) .timeline-date {
+  text-align: left;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.timeline-date h3 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.timeline-content h4 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* fin parcours*/
+/* contact */
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.status {
+  text-align: center;
+  color: green;
+  margin-top: 15px;
+}
+
+.status.error {
+  color: red;
+}
+/* fin contact */
+
+/* skills */
+.skills-section {
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+}
+
+.skills-section h2 {
+font-size: 32px;
+margin-bottom: 20px;
+}
+
+.skills-container {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.skill {
+display: flex;
+align-items: center;
+gap: 20px;
+padding: 15px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill img {
+width: 50px;
+height: 50px;
+}
+
+.skill-info {
+width: 100%;
+}
+
+.skill-info p {
+font-size: 18px;
+margin-bottom: 5px;
+}
+
+.progress-bar {
+background-color: #ddd;
+border-radius: 5px;
+overflow: hidden;
+height: 20px;
+width: 100%;
+}
+
+.progress {
+background-color: #333;
+color: white;
+text-align: center;
+line-height: 20px;
+height: 100%;
+border-radius: 5px;
+transition: width 0.5s ease-in-out;
+}
+/* footer */
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
